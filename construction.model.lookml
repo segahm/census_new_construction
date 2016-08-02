@@ -9,12 +9,49 @@
 - explore: ages_regions
   label: 'Construction Characteristics'
   joins: 
+    
+  - join: property
+    relationship: one_to_many
+    sql_on: |
+      ${ages_regions.year} = ${property.year}
+      AND
+      ${ages_regions.region} = ${property.region}
+  
+  - join: ac_build_4sale1
+    relationship: one_to_one
+    sql_on: |
+      ${ages_regions.year} = ${ac_build_4sale1.year}
+      AND
+      ${ages_regions.region} = ${ac_build_4sale1.region}
+      AND 
+      ${property.type} = 'AC Built for Sale'
+      
+  - join: ac_completed1
+    relationship: one_to_one
+    sql_on: |
+      ${ages_regions.year} = ${ac_completed1.year}
+      AND
+      ${ages_regions.region} = ${ac_completed1.region}
+      AND 
+      ${property.type} = 'AC Completed'
+      
+  - join: ac_contractor_build1
+    relationship: one_to_one
+    sql_on: |
+      ${ages_regions.year} = ${ac_contractor_build1.year}
+      AND
+      ${ages_regions.region} = ${ac_contractor_build1.region}  
+      AND 
+      ${property.type} = 'AC Contractor Build'      
+  
   - join: finance_built_forsale
     relationship: one_to_one
     sql_on: |
       ${ages_regions.year} = ${finance_built_forsale.year}
       AND
       ${ages_regions.region} = ${finance_built_forsale.region}
+      AND 
+      ${property.type} = 'Financial Built for Sale'
     
   - join: finance_contractorbuilt1
     relationship: one_to_one
@@ -22,6 +59,8 @@
       ${ages_regions.year} = ${finance_contractorbuilt1.year}
       AND
       ${ages_regions.region} = ${finance_contractorbuilt1.region}
+      AND 
+      ${property.type} = 'Financial Contractor Built'
   
   - join: finance_owner_built
     relationship: one_to_one
@@ -29,6 +68,8 @@
       ${ages_regions.year} = ${finance_owner_built.year}
       AND
       ${ages_regions.region} = ${finance_owner_built.region}
+      AND 
+      ${property.type} = 'Financial Owner Built'
       
   - join: financial_completed
     relationship: one_to_one
@@ -36,6 +77,8 @@
       ${ages_regions.year} = ${financial_completed.year}
       AND
       ${ages_regions.region} = ${financial_completed.region}
+      AND 
+      ${property.type} = 'Financial Completed'      
       
   - join: age_resticted_completed
     relationship: one_to_one
@@ -43,6 +86,8 @@
       ${ages_regions.year} = ${age_resticted_completed.year}
       AND
       ${ages_regions.region} = ${age_resticted_completed.region}
+      AND 
+      ${property.type} = 'Age Restricted Completed'
       
   - join: bathroom_completed1
     relationship: one_to_one
@@ -50,6 +95,8 @@
       ${ages_regions.year} = ${bathroom_completed1.year}
       AND
       ${ages_regions.region} = ${bathroom_completed1.region}
+      AND 
+      ${property.type} = 'Bathroom Completed'
       
   - join: bathroom_contractorbuilt
     relationship: one_to_one
@@ -57,6 +104,8 @@
       ${ages_regions.year} = ${bathroom_contractorbuilt.year}
       AND
       ${ages_regions.region} = ${bathroom_contractorbuilt.region}
+      AND 
+      ${property.type} = 'Bathroom Contractor Built'
       
   - join: age_rest_builtforsale
     relationship: one_to_one
@@ -64,4 +113,6 @@
       ${ages_regions.year} = ${age_rest_builtforsale.year}
       AND
       ${ages_regions.region} = ${age_rest_builtforsale.region}  
+      AND 
+      ${property.type} = 'Age Restricted Built for Sale'
 
