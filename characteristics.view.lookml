@@ -12,11 +12,22 @@
       
     - dimension: total
       type: string
+      hidden: true
       sql: ${TABLE}.Total
+      
+    - dimension: number_of_units
+      sql: FLOAT(${total})
+      
+    - measure: total_units
+      type: sum
+      sql: ${number_of_units}
       
     - dimension: pk
       primary_key: true
       hidden: true
       sql: CONCAT(${year},${region})
+      
+    - measure: count
+      hidden: true
 
 
