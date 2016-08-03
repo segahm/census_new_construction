@@ -1,14 +1,7 @@
 - view: ac_completed
+  extends: characteristics
   sql_table_name: house_construction.ac_completed1
   fields:
-
-  - dimension: region
-    type: string
-    sql: ${TABLE}.Region
-
-  - dimension: total
-    type: string
-    sql: ${TABLE}.Total
 
   - dimension: with_air_conditioning
     type: string
@@ -17,10 +10,6 @@
   - dimension: without_air_conditioning
     type: string
     sql: ${TABLE}.Without_air_conditioning
-
-  - dimension: year
-    type: string
-    sql: ${TABLE}.Year
 
   - measure: count
     type: count

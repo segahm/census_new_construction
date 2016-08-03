@@ -23,7 +23,7 @@
       ${ages_regions.year} = ${ac_build_4sale.year}
       AND
       ${ages_regions.region} = ${ac_build_4sale.region}
-      AND 
+    sql_where: |
       ${property.type} = 'AC Built for Sale'
       
   - join: ac_completed
@@ -32,7 +32,7 @@
       ${ages_regions.year} = ${ac_completed.year}
       AND
       ${ages_regions.region} = ${ac_completed.region}
-      AND 
+    sql_where: |
       ${property.type} = 'AC Completed'
       
   - join: ac_contractor_build
@@ -41,7 +41,7 @@
       ${ages_regions.year} = ${ac_contractor_build.year}
       AND
       ${ages_regions.region} = ${ac_contractor_build.region}  
-      AND 
+    sql_where: |
       ${property.type} = 'AC Contractor Build'      
   
   - join: finance_built_forsale
@@ -50,7 +50,7 @@
       ${ages_regions.year} = ${finance_built_forsale.year}
       AND
       ${ages_regions.region} = ${finance_built_forsale.region}
-      AND 
+    sql_where: |
       ${property.type} = 'Financial Built for Sale'
     
   - join: finance_contractorbuilt
@@ -59,7 +59,7 @@
       ${ages_regions.year} = ${finance_contractorbuilt.year}
       AND
       ${ages_regions.region} = ${finance_contractorbuilt.region}
-      AND 
+    sql_where: |
       ${property.type} = 'Financial Contractor Built'
   
   - join: finance_owner_built
@@ -68,7 +68,7 @@
       ${ages_regions.year} = ${finance_owner_built.year}
       AND
       ${ages_regions.region} = ${finance_owner_built.region}
-      AND 
+    sql_where: |
       ${property.type} = 'Financial Owner Built'
       
   - join: financial_completed
@@ -77,7 +77,7 @@
       ${ages_regions.year} = ${financial_completed.year}
       AND
       ${ages_regions.region} = ${financial_completed.region}
-      AND 
+    sql_where: |
       ${property.type} = 'Financial Completed'      
       
   - join: age_resticted_completed
@@ -86,7 +86,7 @@
       ${ages_regions.year} = ${age_resticted_completed.year}
       AND
       ${ages_regions.region} = ${age_resticted_completed.region}
-      AND 
+    sql_where: |
       ${property.type} = 'Age Restricted Completed'
       
   - join: bathroom_completed
@@ -95,7 +95,7 @@
       ${ages_regions.year} = ${bathroom_completed.year}
       AND
       ${ages_regions.region} = ${bathroom_completed.region}
-      AND 
+    sql_where: |
       ${property.type} = 'Bathroom Completed'
       
   - join: bathroom_contractorbuilt
@@ -104,7 +104,7 @@
       ${ages_regions.year} = ${bathroom_contractorbuilt.year}
       AND
       ${ages_regions.region} = ${bathroom_contractorbuilt.region}
-      AND 
+    sql_where: |
       ${property.type} = 'Bathroom Contractor Built'
       
   - join: age_rest_builtforsale
@@ -113,5 +113,5 @@
       ${ages_regions.year} = ${age_rest_builtforsale.year}
       AND
       ${ages_regions.region} = ${age_rest_builtforsale.region}  
-      AND 
+    sql_where: | 
       ${property.type} = 'Age Restricted Built for Sale'

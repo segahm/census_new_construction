@@ -8,5 +8,15 @@
     - dimension: region
       hidden: true
       sql: ${TABLE}.Region
+      
+      
+    - dimension: total
+      type: string
+      sql: ${TABLE}.Total
+      
+    - dimension: pk
+      primary_key: true
+      hidden: true
+      sql: CONCAT(${year},${region})
 
 
