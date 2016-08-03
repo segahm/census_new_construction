@@ -22,6 +22,10 @@
       type: sum
       hidden: true
       sql: FLOAT(${TABLE}.Total)
+      
+    - measure: total_units
+      type: sum
+      sql: FLOAT(${TABLE}.Total)    
 
     - dimension: pk
       primary_key: true
