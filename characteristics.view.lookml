@@ -10,18 +10,18 @@
       sql: ${TABLE}.Region
 
 
+#     - dimension: total
+#       hidden: true
+#       sql: ${TABLE}.Total
+# 
+#     - dimension: number_of_units
+#       hidden: true
+#       sql: FLOAT(${total})
+
     - measure: total
       type: sum
       hidden: true
-      sql: ${TABLE}.Total
-
-    - measure: number_of_units
-      hidden: true
-      sql: FLOAT(${total})
-
-    - measure: total_units
-      type: sum
-      sql: ${number_of_units}
+      sql: FLOAT(${TABLE}.Total)
 
     - dimension: pk
       primary_key: true
