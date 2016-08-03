@@ -7,13 +7,17 @@
     type: string
     sql: ${TABLE}.Total
 
-  - dimension: with_air_conditioning
-    type: string
-    sql: ${TABLE}.With_air_conditioning
+#   - dimension: with_air_conditioning
+#     type: number
+#     sql: ${TABLE}.With_air_conditioning
 
   - dimension: without_air_conditioning
     type: string
     sql: ${TABLE}.Without_air_conditioning
+    
+  - measure: with_air_conditioning
+    type: sum
+    sql: FLOAT(${TABLE}.With_air_conditioning)
 
   - measure: count
     type: count
