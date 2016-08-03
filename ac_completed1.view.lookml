@@ -3,13 +3,13 @@
   sql_table_name: house_construction.ac_completed1
   fields:
 
-  - dimension: with_air_conditioning
-    type: string
-    sql: ${TABLE}.With_air_conditioning
+  - measure: with_air_conditioning
+    type: sum
+    sql: FLOAT(${TABLE}.With_air_conditioning)
 
-  - dimension: without_air_conditioning
-    type: string
-    sql: ${TABLE}.Without_air_conditioning
+  - measure: without_air_conditioning
+    type: sum
+    sql: FLOAT(${TABLE}.Without_air_conditioning)
 
   - measure: count
     type: count

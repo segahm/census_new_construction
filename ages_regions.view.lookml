@@ -1,11 +1,11 @@
 - view: ages_regions
   derived_table:
     sql: |
-      SELECT 
+      SELECT
         Year AS year
         , Region AS region
         , TO_BASE64(SHA1(CONCAT(Year,Region))) as pk
-      FROM 
+      FROM
         house_construction.financial_completed AS financial_completed
         , house_construction.finance_owner_built
         , house_construction.finance_contractorbuilt1
@@ -22,12 +22,12 @@
   fields:
     - dimension: year
 #       hidden: true
-      sql: ${TABLE}.year
+      sql: ${TABLE}.Year
 
     - dimension: region
 #       hidden: true
-      sql: ${TABLE}.region
-      
+      sql: ${TABLE}.Region
+
     - dimension: pk
       hidden: true
       primary_key: true

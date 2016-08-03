@@ -3,21 +3,21 @@
   sql_table_name: house_construction.age_resticted_completed
   fields:
 
-  - dimension: age_restricted_dev
-    type: string
-    sql: ${TABLE}.Age_RestrictedDev
+  - measure: age_restricted_dev
+    type: sum
+    sql: FLOAT(${TABLE}.Age_RestrictedDev)
 
-  - dimension: not_age_restricted_dev
-    type: string
-    sql: ${TABLE}.Not_Age_RestrictedDev
+  - measure: not_age_restricted_dev
+    type: sum
+    sql: FLOAT(${TABLE}.Not_Age_RestrictedDev)
 
   - dimension: region
     type: string
     sql: ${TABLE}.Region
 
-  - dimension: total
-    type: string
-    sql: ${TABLE}.Total
+  - measure: total
+    type: sum
+    sql: FLOAT(${TABLE}.Total)
 
   - dimension: year
     type: string

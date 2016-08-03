@@ -3,18 +3,18 @@
   sql_table_name: house_construction.ac_build_4sale1
   fields:
 
-  - dimension: total
-    type: string
-    sql: ${TABLE}.Total
+  - measure: total
+    type: sum
+    sql: FLOAT(${TABLE}.Total)
 
-#   - dimension: with_air_conditioning
+#   - measure: with_air_conditioning
 #     type: number
-#     sql: ${TABLE}.With_air_conditioning
+#     sql: FLOAT(${TABLE}.With_air_conditioning)
 
-  - dimension: without_air_conditioning
-    type: string
-    sql: ${TABLE}.Without_air_conditioning
-    
+  - measure: without_air_conditioning
+    type: sum
+    sql: FLOAT(${TABLE}.Without_air_conditioning)
+
   - measure: with_air_conditioning
     type: sum
     sql: FLOAT(${TABLE}.With_air_conditioning)

@@ -6,17 +6,17 @@
     type: string
     sql: ${TABLE}.Region
 
-  - dimension: total
-    type: string
-    sql: ${TABLE}.Total
+  - measure: total
+    type: sum
+    sql: FLOAT(${TABLE}.Total)
 
-  - dimension: with_air_conditioning
-    type: string
-    sql: ${TABLE}.With_air_conditioning
+  - measure: with_air_conditioning
+    type: sum
+    sql: FLOAT(${TABLE}.With_air_conditioning)
 
-  - dimension: without_air_conditioning
-    type: string
-    sql: ${TABLE}.Without_air_conditioning
+  - measure: without_air_conditioning
+    type: sum
+    sql: FLOAT(${TABLE}.Without_air_conditioning)
 
   - dimension: year
     type: string

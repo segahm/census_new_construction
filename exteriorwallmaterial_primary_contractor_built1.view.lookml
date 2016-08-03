@@ -2,37 +2,37 @@
   sql_table_name: house_construction.exteriorwallmaterial_primary_contractor_built
   fields:
 
-  - dimension: brick
-    type: string
-    sql: ${TABLE}.Brick
+  - measure: brick
+    type: sum
+    sql: FLOAT(${TABLE}.Brick)
 
-  - dimension: fiber_cement
-    type: string
-    sql: ${TABLE}.Fiber_cement
+  - measure: fiber_cement
+    type: sum
+    sql: FLOAT(${TABLE}.Fiber_cement)
 
-  - dimension: other2
-    type: string
-    sql: ${TABLE}.Other2
+  - measure: other2
+    type: sum
+    sql: FLOAT(${TABLE}.Other2)
 
   - dimension: region
     type: string
     sql: ${TABLE}.Region
 
-  - dimension: stucco
-    type: string
-    sql: ${TABLE}.Stucco
+  - measure: stucco
+    type: sum
+    sql: FLOAT(${TABLE}.Stucco)
 
-  - dimension: total
-    type: string
-    sql: ${TABLE}.Total
+  - measure: total
+    type: sum
+    sql: FLOAT(${TABLE}.Total)
 
-  - dimension: vinyl_siding
-    type: string
-    sql: ${TABLE}.Vinyl_siding
+  - measure: vinyl_siding
+    type: sum
+    sql: FLOAT(${TABLE}.Vinyl_siding)
 
-  - dimension: wood
-    type: string
-    sql: ${TABLE}.Wood
+  - measure: wood
+    type: sum
+    sql: FLOAT(${TABLE}.Wood)
 
   - dimension: year
     type: string

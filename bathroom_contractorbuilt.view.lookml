@@ -3,29 +3,29 @@
   sql_table_name: house_construction.bathroom_contractorbuilt
   fields:
 
-  - dimension: fiveby2_baths2
-    type: string
-    sql: ${TABLE}.fiveby2_baths2
+  - measure: fiveby2_baths2
+    type: sum
+    sql: FLOAT(${TABLE}.fiveby2_baths2)
 
   - dimension: region
     type: string
     sql: ${TABLE}.Region
 
-  - dimension: three_baths_ormore
-    type: string
-    sql: ${TABLE}.three_baths_ormore
+  - measure: three_baths_ormore
+    type: sum
+    sql: FLOAT(${TABLE}.three_baths_ormore)
 
-  - dimension: threebytwobaths_or_less
-    type: string
-    sql: ${TABLE}.threebytwobaths_or_less
+  - measure: threebytwobaths_or_less
+    type: sum
+    sql: FLOAT(${TABLE}.threebytwobaths_or_less)
 
-  - dimension: total
-    type: string
-    sql: ${TABLE}.Total
+  - measure: total
+    type: sum
+    sql: FLOAT(${TABLE}.Total)
 
-  - dimension: two_baths
-    type: string
-    sql: ${TABLE}.two_baths
+  - measure: two_baths
+    type: sum
+    sql: FLOAT(${TABLE}.two_baths)
 
   - dimension: year
     type: string

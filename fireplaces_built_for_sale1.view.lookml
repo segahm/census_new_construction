@@ -2,25 +2,25 @@
   sql_table_name: house_construction.fireplaces_built_for_sale1
   fields:
 
-  - dimension: no_fireplace
-    type: string
-    sql: ${TABLE}.No_fireplace
+  - measure: no_fireplace
+    type: sum
+    sql: FLOAT(${TABLE}.No_fireplace)
 
-  - dimension: one_fireplace
-    type: string
-    sql: ${TABLE}.One_fireplace
+  - measure: one_fireplace
+    type: sum
+    sql: FLOAT(${TABLE}.One_fireplace)
 
   - dimension: region
     type: string
     sql: ${TABLE}.Region
 
-  - dimension: total
-    type: string
-    sql: ${TABLE}.Total
+  - measure: total
+    type: sum
+    sql: FLOAT(${TABLE}.Total)
 
-  - dimension: two_or_more_fireplaces
-    type: string
-    sql: ${TABLE}.two_or_more_fireplaces
+  - measure: two_or_more_fireplaces
+    type: sum
+    sql: FLOAT(${TABLE}.two_or_more_fireplaces)
 
   - dimension: year
     type: string

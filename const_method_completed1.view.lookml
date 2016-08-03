@@ -2,25 +2,25 @@
   sql_table_name: house_construction.const_method_completed
   fields:
 
-  - dimension: modular
-    type: string
-    sql: ${TABLE}.Modular
+  - measure: modular
+    type: sum
+    sql: FLOAT(${TABLE}.Modular)
 
-  - dimension: other2
-    type: string
-    sql: ${TABLE}.Other2
+  - measure: other2
+    type: sum
+    sql: FLOAT(${TABLE}.Other2)
 
   - dimension: region
     type: string
     sql: ${TABLE}.Region
 
-  - dimension: site_built
-    type: string
-    sql: ${TABLE}.Site_built
+  - measure: site_built
+    type: sum
+    sql: FLOAT(${TABLE}.Site_built)
 
-  - dimension: total
-    type: string
-    sql: ${TABLE}.Total
+  - measure: total
+    type: sum
+    sql: FLOAT(${TABLE}.Total)
 
   - dimension: year
     type: string

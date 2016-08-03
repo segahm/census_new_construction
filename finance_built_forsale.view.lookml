@@ -3,37 +3,37 @@
   sql_table_name: house_construction.finance_built_forsale
   fields:
 
-  - dimension: cash
-    type: string
-    sql: ${TABLE}.Cash
+  - measure: cash
+    type: sum
+    sql: FLOAT(${TABLE}.Cash)
 
-  - dimension: conventional2
-    type: string
-    sql: ${TABLE}.Conventional2
+  - measure: conventional2
+    type: sum
+    sql: FLOAT(${TABLE}.Conventional2)
 
-  - dimension: fha_insured
-    type: string
-    sql: ${TABLE}.FHA_insured
+  - measure: fha_insured
+    type: sum
+    sql: FLOAT(${TABLE}.FHA_insured)
 
-  - dimension: for_rent
-    type: string
-    sql: ${TABLE}.For_Rent
+  - measure: for_rent
+    type: sum
+    sql: FLOAT(${TABLE}.For_Rent)
 
-  - dimension: for_sale_not_yet_sold
-    type: string
-    sql: ${TABLE}.For_Sale_NotYetSold
+  - measure: for_sale_not_yet_sold
+    type: sum
+    sql: FLOAT(${TABLE}.For_Sale_NotYetSold)
 
   - dimension: region
     type: string
     sql: ${TABLE}.Region
 
-  - dimension: total
-    type: string
-    sql: ${TABLE}.Total
+  - measure: total
+    type: sum
+    sql: FLOAT(${TABLE}.Total)
 
-  - dimension: va_guaranteed
-    type: string
-    sql: ${TABLE}.VA_guaranteed
+  - measure: va_guaranteed
+    type: sum
+    sql: FLOAT(${TABLE}.VA_guaranteed)
 
   - dimension: year
     type: string

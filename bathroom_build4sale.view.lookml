@@ -3,29 +3,29 @@
   sql_table_name: house_construction.bathroom_build4sale
   fields:
 
-  - dimension: oneand_half_baths_orless
-    type: string
-    sql: ${TABLE}.Oneand_half_baths_orless
+  - measure: oneand_half_baths_orless
+    type: sum
+    sql: FLOAT(${TABLE}.Oneand_half_baths_orless)
 
   - dimension: region
     type: string
     sql: ${TABLE}.Region
 
-  - dimension: three_baths_ormore
-    type: string
-    sql: ${TABLE}.Three_baths_ormore
+  - measure: three_baths_ormore
+    type: sum
+    sql: FLOAT(${TABLE}.Three_baths_ormore)
 
-  - dimension: total
-    type: string
-    sql: ${TABLE}.Total
+  - measure: total
+    type: sum
+    sql: FLOAT(${TABLE}.Total)
 
-  - dimension: two_baths
-    type: string
-    sql: ${TABLE}.Two_baths
+  - measure: two_baths
+    type: sum
+    sql: FLOAT(${TABLE}.Two_baths)
 
-  - dimension: twoand_half_baths2
-    type: string
-    sql: ${TABLE}.Twoand_half_baths2
+  - measure: twoand_half_baths2
+    type: sum
+    sql: FLOAT(${TABLE}.Twoand_half_baths2)
 
   - dimension: year
     type: string

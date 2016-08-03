@@ -2,29 +2,29 @@
   sql_table_name: house_construction.bedrmsbybathrm_2_bedrooms_orless_owner_built1
   fields:
 
-  - dimension: oneandhalf_baths_orless
-    type: string
-    sql: ${TABLE}.Oneandhalf_baths_orless
+  - measure: oneandhalf_baths_orless
+    type: sum
+    sql: FLOAT(${TABLE}.Oneandhalf_baths_orless)
 
   - dimension: region
     type: string
     sql: ${TABLE}.Region
 
-  - dimension: three_baths_ormore
-    type: string
-    sql: ${TABLE}.Three_baths_ormore
+  - measure: three_baths_ormore
+    type: sum
+    sql: FLOAT(${TABLE}.Three_baths_ormore)
 
-  - dimension: total
-    type: string
-    sql: ${TABLE}.Total
+  - measure: total
+    type: sum
+    sql: FLOAT(${TABLE}.Total)
 
-  - dimension: two_and_half_baths2
-    type: string
-    sql: ${TABLE}.Two_and_half_baths2
+  - measure: two_and_half_baths2
+    type: sum
+    sql: FLOAT(${TABLE}.Two_and_half_baths2)
 
-  - dimension: two_baths
-    type: string
-    sql: ${TABLE}.Two_baths
+  - measure: two_baths
+    type: sum
+    sql: FLOAT(${TABLE}.Two_baths)
 
   - dimension: year
     type: string

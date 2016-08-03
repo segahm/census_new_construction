@@ -1,7 +1,7 @@
 - view: property
   derived_table:
     sql: |
-      SELECT 
+      SELECT
         Year AS year
         , Region AS region
         , TO_BASE64(SHA1(CONCAT(Year,Region,type,number_of_units))) as pk
@@ -38,7 +38,7 @@
           , Total AS number_of_units
           , 'Financial Built for Sale' AS type
         from house_construction.finance_built_forsale
-      ),  
+      ),
       (
         SELECT
           Year
@@ -115,7 +115,7 @@
           , 'AC Contractor Build' AS type
         from house_construction.ac_contractor_build1
       )
-      
+
       GROUP EACH BY 1,2,3,4,5
       ORDER BY  1 ASC
     sql_trigger_value: SELECT CURRENT_DATE()
@@ -128,16 +128,16 @@
     - dimension: region
       hidden: true
       sql: ${TABLE}.region
-      
+
     - dimension: number_of_units
       hidden: true
-      
-    - dimension: type
-      
+
+    - measure: type
+
     - measure: total
       type: sum
       sql: FLOAT(${number_of_units})
-      
+
     - dimension: pk
       hidden: true
       primary_key: true
