@@ -86,7 +86,7 @@
           , Region
           , Total AS number_of_units
           , 'Exterior Wall MAterial Sec Owner Built' AS type
-        from house_construction.exteriorwallmaterial_sec_ownerbuilt
+        from house_construction.exteriorwallmaterial_sec_ownerbuilt1
       )
       ,
       (
