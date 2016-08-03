@@ -16,6 +16,7 @@
       sql: ${TABLE}.Total
       
     - dimension: number_of_units
+      hidden: true
       sql: FLOAT(${total})
       
     - measure: total_units
