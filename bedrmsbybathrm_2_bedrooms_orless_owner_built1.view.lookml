@@ -1,4 +1,4 @@
-- view: bedrmsbybathrm_2_bedrooms_orless_owner_built1
+- view: bedrmsbybathrm_2_bedrooms_orless_owner_built
   sql_table_name: house_construction.bedrmsbybathrm_2_bedrooms_orless_owner_built1
   fields:
 
@@ -34,4 +34,3 @@
     type: count
     approximate_threshold: 100000
     drill_fields: []
-

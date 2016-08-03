@@ -1,4 +1,4 @@
-- view: fireplaces_completed1
+- view: fireplaces_completed
   sql_table_name: house_construction.fireplaces_completed1
   fields:
 
@@ -30,4 +30,3 @@
     type: count
     approximate_threshold: 100000
     drill_fields: []
-

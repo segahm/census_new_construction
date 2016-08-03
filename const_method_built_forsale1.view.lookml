@@ -1,5 +1,5 @@
-- view: const_method_built_forsale1
-  sql_table_name: house_construction.const_method_built_forsale1
+- view: const_method_built_forsale
+  sql_table_name: house_construction.const_method_built_forsale
   fields:
 
   - dimension: modular
@@ -30,4 +30,3 @@
     type: count
     approximate_threshold: 100000
     drill_fields: []
-

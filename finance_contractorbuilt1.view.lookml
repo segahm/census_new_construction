@@ -1,4 +1,4 @@
-- view: finance_contractorbuilt1
+- view: finance_contractorbuilt
   extends: characteristics
   sql_table_name: house_construction.finance_contractorbuilt1
   fields:
@@ -43,4 +43,3 @@
     type: count
     approximate_threshold: 100000
     drill_fields: []
-

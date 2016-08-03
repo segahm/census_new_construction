@@ -86,7 +86,7 @@
           , Region
           , Total AS number_of_units
           , 'Exterior Wall MAterial Sec Owner Built' AS type
-        from house_construction.exteriorwallmaterial_sec_ownerbuilt1
+        from house_construction.exteriorwallmaterial_sec_ownerbuilt
       )
       ,
       (
@@ -117,7 +117,7 @@
       )
       
       GROUP EACH BY 1,2,3,4,5
-      ORDER BY 1 ASC
+      ORDER BY  1 ASC
     sql_trigger_value: SELECT CURRENT_DATE()
 #
   fields:

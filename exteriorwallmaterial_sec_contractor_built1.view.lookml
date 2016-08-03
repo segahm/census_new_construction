@@ -1,5 +1,5 @@
-- view: exteriorwallmaterial_sec_contractor_built1
-  sql_table_name: house_construction.exteriorwallmaterial_sec_contractor_built1
+- view: exteriorwallmaterial_sec_contractor_built
+  sql_table_name: house_construction.exteriorwallmaterial_sec_contractor_built
   fields:
 
   - dimension: brick
@@ -46,4 +46,3 @@
     type: count
     approximate_threshold: 100000
     drill_fields: []
-

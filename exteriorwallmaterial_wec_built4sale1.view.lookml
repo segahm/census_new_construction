@@ -1,4 +1,4 @@
-- view: exteriorwallmaterial_wec_built4sale1
+- view: exteriorwallmaterial_wec_built4sale
   sql_table_name: house_construction.exteriorwallmaterial_wec_built4sale1
   fields:
 
@@ -46,4 +46,3 @@
     type: count
     approximate_threshold: 100000
     drill_fields: []
-

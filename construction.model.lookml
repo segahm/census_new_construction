@@ -17,30 +17,30 @@
       AND
       ${ages_regions.region} = ${property.region}
   
-  - join: ac_build_4sale1
+  - join: ac_build_4sale
     relationship: one_to_one
     sql_on: |
-      ${ages_regions.year} = ${ac_build_4sale1.year}
+      ${ages_regions.year} = ${ac_build_4sale.year}
       AND
-      ${ages_regions.region} = ${ac_build_4sale1.region}
+      ${ages_regions.region} = ${ac_build_4sale.region}
       AND 
       ${property.type} = 'AC Built for Sale'
       
-  - join: ac_completed1
+  - join: ac_completed
     relationship: one_to_one
     sql_on: |
-      ${ages_regions.year} = ${ac_completed1.year}
+      ${ages_regions.year} = ${ac_completed.year}
       AND
-      ${ages_regions.region} = ${ac_completed1.region}
+      ${ages_regions.region} = ${ac_completed.region}
       AND 
       ${property.type} = 'AC Completed'
       
-  - join: ac_contractor_build1
+  - join: ac_contractor_build
     relationship: one_to_one
     sql_on: |
-      ${ages_regions.year} = ${ac_contractor_build1.year}
+      ${ages_regions.year} = ${ac_contractor_build.year}
       AND
-      ${ages_regions.region} = ${ac_contractor_build1.region}  
+      ${ages_regions.region} = ${ac_contractor_build.region}  
       AND 
       ${property.type} = 'AC Contractor Build'      
   
@@ -53,12 +53,12 @@
       AND 
       ${property.type} = 'Financial Built for Sale'
     
-  - join: finance_contractorbuilt1
+  - join: finance_contractorbuilt
     relationship: one_to_one
     sql_on: |
-      ${ages_regions.year} = ${finance_contractorbuilt1.year}
+      ${ages_regions.year} = ${finance_contractorbuilt.year}
       AND
-      ${ages_regions.region} = ${finance_contractorbuilt1.region}
+      ${ages_regions.region} = ${finance_contractorbuilt.region}
       AND 
       ${property.type} = 'Financial Contractor Built'
   
@@ -89,12 +89,12 @@
       AND 
       ${property.type} = 'Age Restricted Completed'
       
-  - join: bathroom_completed1
+  - join: bathroom_completed
     relationship: one_to_one
     sql_on: |
-      ${ages_regions.year} = ${bathroom_completed1.year}
+      ${ages_regions.year} = ${bathroom_completed.year}
       AND
-      ${ages_regions.region} = ${bathroom_completed1.region}
+      ${ages_regions.region} = ${bathroom_completed.region}
       AND 
       ${property.type} = 'Bathroom Completed'
       
@@ -115,4 +115,3 @@
       ${ages_regions.region} = ${age_rest_builtforsale.region}  
       AND 
       ${property.type} = 'Age Restricted Built for Sale'
-

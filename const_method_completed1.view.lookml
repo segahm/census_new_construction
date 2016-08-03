@@ -1,5 +1,5 @@
-- view: const_method_completed1
-  sql_table_name: house_construction.const_method_completed1
+- view: const_method_completed
+  sql_table_name: house_construction.const_method_completed
   fields:
 
   - dimension: modular
@@ -30,4 +30,3 @@
     type: count
     approximate_threshold: 100000
     drill_fields: []
-

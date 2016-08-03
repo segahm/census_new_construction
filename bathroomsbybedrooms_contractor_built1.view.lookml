@@ -1,4 +1,4 @@
-- view: bathroomsbybedrooms_contractor_built1
+- view: bathroomsbybedrooms_contractor_built
   sql_table_name: house_construction.bathroomsbybedrooms_Contractor_built1
   fields:
 
@@ -30,4 +30,3 @@
     type: count
     approximate_threshold: 100000
     drill_fields: []
-

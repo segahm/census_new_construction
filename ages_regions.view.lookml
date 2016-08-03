@@ -15,7 +15,7 @@
         , house_construction.bathroom_build4sale
         , house_construction.age_resticted_completed
         , house_construction.age_rest_builtforsale
-      GROUP EACH BY 1,2,3
+      GROUP EACH BY 1 ,2,3
       ORDER BY 1 ASC
     sql_trigger_value: SELECT CURRENT_DATE()
 #

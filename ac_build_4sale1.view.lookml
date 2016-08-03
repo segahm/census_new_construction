@@ -1,10 +1,7 @@
-- view: ac_build_4sale1
+- view: ac_build_4sale
+  extends: characteristics
   sql_table_name: house_construction.ac_build_4sale1
   fields:
-
-  - dimension: region
-    type: string
-    sql: ${TABLE}.Region
 
   - dimension: total
     type: string
@@ -18,12 +15,7 @@
     type: string
     sql: ${TABLE}.Without_air_conditioning
 
-  - dimension: year
-    type: string
-    sql: ${TABLE}.Year
-
   - measure: count
     type: count
     approximate_threshold: 100000
     drill_fields: []
-

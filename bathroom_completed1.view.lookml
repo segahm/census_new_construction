@@ -1,4 +1,4 @@
-- view: bathroom_completed1
+- view: bathroom_completed
   extends: characteristics
   sql_table_name: house_construction.bathroom_completed1
   fields:
@@ -35,4 +35,3 @@
     type: count
     approximate_threshold: 100000
     drill_fields: []
-

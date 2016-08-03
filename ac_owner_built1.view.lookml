@@ -1,4 +1,4 @@
-- view: ac_owner_built1
+- view: ac_owner_built
   sql_table_name: house_construction.ac_owner_built1
   fields:
 
@@ -26,4 +26,3 @@
     type: count
     approximate_threshold: 100000
     drill_fields: []
-

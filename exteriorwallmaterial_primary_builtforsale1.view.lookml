@@ -1,5 +1,5 @@
-- view: exteriorwallmaterial_primary_builtforsale1
-  sql_table_name: house_construction.exteriorwallmaterial_primary_builtforsale1
+- view: exteriorwallmaterial_primary_builtforsale
+  sql_table_name: house_construction.exteriorwallmaterial_primary_builtforsale
   fields:
 
   - dimension: brick
@@ -42,4 +42,3 @@
     type: count
     approximate_threshold: 100000
     drill_fields: []
-

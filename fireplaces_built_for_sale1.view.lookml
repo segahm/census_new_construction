@@ -1,4 +1,4 @@
-- view: fireplaces_built_for_sale1
+- view: fireplaces_built_for_sale
   sql_table_name: house_construction.fireplaces_built_for_sale1
   fields:
 
@@ -30,4 +30,3 @@
     type: count
     approximate_threshold: 100000
     drill_fields: []
-
