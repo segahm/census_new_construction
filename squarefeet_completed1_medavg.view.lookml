@@ -1,4 +1,4 @@
-- view: squarefeet_completed_medavg
+- view: square_feet_completed_medavg
   sql_table_name: house_construction.squarefeet_completed1_medavg
   fields:
 

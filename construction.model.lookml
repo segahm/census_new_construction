@@ -25,12 +25,12 @@
       AND
       ${ages_regions.region} = ${square_feet_completed.region}
       
-  - join: squarefeet_completed_medavg
+  - join: square_feet_completed_medavg
     relationship: one_to_one
     sql_on: |
-      ${ages_regions.year} = ${squarefeet_completed_medavg.year}
+      ${ages_regions.year} = ${square_feet_completed_medavg.year}
       AND
-      ${ages_regions.region} = ${squarefeet_completed_medavg.region}      
+      ${ages_regions.region} = ${square_feet_completed_medavg.region}      
 
   - join: bedrooms_total
     relationship: one_to_one
