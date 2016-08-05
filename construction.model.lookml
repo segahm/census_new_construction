@@ -16,6 +16,49 @@
 #       ${ages_regions.year} = ${property.year}
 #       AND
 #       ${ages_regions.region} = ${property.region}
+
+
+  - join: square_feet_completed
+    relationship: one_to_one
+    sql_on: |
+      ${ages_regions.year} = ${square_feet_completed.year}
+      AND
+      ${ages_regions.region} = ${square_feet_completed.region}
+      
+  - join: squarefeet_completed_medavg
+    relationship: one_to_one
+    sql_on: |
+      ${ages_regions.year} = ${squarefeet_completed_medavg.year}
+      AND
+      ${ages_regions.region} = ${squarefeet_completed_medavg.region}      
+
+  - join: bedrooms_total
+    relationship: one_to_one
+    sql_on: |
+      ${ages_regions.year} = ${bedrooms_total.year}
+      AND
+      ${ages_regions.region} = ${bedrooms_total.region}
+      
+  - join: bedrooms_owner
+    relationship: one_to_one
+    sql_on: |
+      ${ages_regions.year} = ${bedrooms_owner.year}
+      AND
+      ${ages_regions.region} = ${bedrooms_owner.region}
+      
+  - join: bedrooms_for_sale
+    relationship: one_to_one
+    sql_on: |
+      ${ages_regions.year} = ${bedrooms_for_sale.year}
+      AND
+      ${ages_regions.region} = ${bedrooms_for_sale.region}
+      
+  - join: bedrooms_contract
+    relationship: one_to_one
+    sql_on: |
+      ${ages_regions.year} = ${bedrooms_contract.year}
+      AND
+      ${ages_regions.region} = ${bedrooms_contract.region}      
   
   - join: ac_build_4sale
     relationship: one_to_one
