@@ -2,13 +2,13 @@
   sql_table_name: house_construction.squarefeet_completed1_medavg
   fields:
 
-  - dimension: average_square_feet
-    type: string
-    sql: ${TABLE}.Average_Square_feet
+  - measure: average_square_feet
+    type: sum
+    sql: FLOAT(${TABLE}.Average_Square_feet)
 
-  - dimension: median_square_feet
-    type: string
-    sql: ${TABLE}.Median_square_feet
+  - measure: median_square_feet
+    type: sum
+    sql: FLOAT(${TABLE}.Median_square_feet)
 
   - dimension: region
     type: string
