@@ -24,7 +24,11 @@
     - dimension: year
       type: number
 #       hidden: true
-      sql: ${TABLE}.Year
+      sql: FLOAT(${TABLE}.Year)
+      
+    - dimension: year_indx
+      hidden: true
+      sql: ${TABLE}.Year      
 
     - dimension: region
 #       hidden: true
