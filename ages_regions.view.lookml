@@ -22,6 +22,7 @@
 #
   fields:
     - dimension: year
+      type: number
 #       hidden: true
       sql: ${TABLE}.Year
 
