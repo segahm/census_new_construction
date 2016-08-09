@@ -24,7 +24,7 @@
     - dimension: year
       type: date_year
       datatype: yyyymmdd
-      sql: CONCAT(${TABLE}.Year,'01','01')
+      sql: CAST(CONCAT(${TABLE}.Year,'01','01') AS INTEGER)
   
 #     - dimension: year
 #       type: number
