@@ -22,9 +22,14 @@
 #
   fields:
     - dimension: year
-      type: number
-#       hidden: true
-      sql: FLOAT(${TABLE}.Year)
+      type: date_year
+      datatype: yyyymmdd
+      sql: CONCAT(${TABLE}.Year,'01','01')
+  
+#     - dimension: year
+#       type: number
+# #       hidden: true
+#       sql: FLOAT(${TABLE}.Year)
       
     - dimension: year_indx
       hidden: true
